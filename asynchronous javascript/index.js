@@ -143,3 +143,14 @@ const doSomething = async function () {
   }
 };
 doSomething();
+
+// web workers in javascript
+// a web worker is  a javascript program running on a different thread alongside the main thread
+
+// single core- computer works on one thread, as soon as it is done, it switchs to the next thread and works on something there, etc, it only allows one thread to run at a time. This is called CONCURRENCY
+
+// In multi-core cpu, many more cpus principle where where multiple threads run simultaneously. This is called CONCURRENCY + PARALLELISM
+
+// parallelism is not built in javascript.
+const {spawn} = require('child_process')
+spawn('git', ['stuff'])
