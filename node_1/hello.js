@@ -17,3 +17,11 @@ if (mission == "Learn"){
 // the language that the client and server use to communicate to each other is called http/https. Https is a secure version of the https protocol
 // backends can be made with any languages of runtimes that we want eg node, python, java, go, ruby, flask etc. this code is called backend code
 
+
+// what does node.js include and do?
+// (fs, http, path, crypto)
+// bindings that allow javascript call functionalities implemented using C and C++
+// these functionalities live in Libuv
+// libuv and v8 are very important to node
+// libuv deals with input and output tasks, it is written in C/C++
+
