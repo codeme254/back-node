@@ -37,7 +37,6 @@ console.log("Turtle finishes");
 // they execute in background or even in parallel with the rest of the code
 // javascript is asynchronous language
 
-
 // multithreading, processes and threads
 // the way that we take advatage of multiple cores to run our programs faster is by using threads
 // we run the proces(s), processes are containers containig your code
@@ -59,3 +58,39 @@ console.log("Turtle finishes");
     processEvents();
 }*/
 
+// the event loop is the piece of code in libuv that processes asynchronous events
+// event loop phases
+// 1.timers
+// 2.I/O callbacks---network and file operations etc
+// 3.setImmediate---executes after i/o phase
+// 4.callbacks:::closing callbacks and all that.
+
+// node vs php  and python
+// java c and c++ support multithreading.
+// python and php are high level easy to use single threaded programming languages
+// node was built specifficaly to do non-blocking i/o simply and effectively.
+// what is node best at
+// node is not good at things like video processing, machine learning etc, they block the c.p.u(video processing) or even g.p.u(machine learning)
+// node is good at talking to servers, eg talking to databases, I/O performance and  many more
+
+// NODE IS EVENT DRIVEN
+// It then uses observer desing pattern
+// design patterns allow developers to avoid reinventing the wheel to avoid coming up with patterns of our own from scratch everytime we encounter a problem.
+
+const EventEmitter = require("events");
+const celebrity = new EventEmitter();
+
+// subscribe to the celebrity for observer 1
+celebrity.on('race win', function() {
+  console.log("Congragulations! You are the best.")
+})
+// every time the celebrity wins a race, the observer will pring a congratuatlions message
+// the callback function is the listener
+// we can also have multipl listeners and they will be executed one after another
+celebrity.on('race win', function() {
+  console.log("Boo I could have done better.")
+})
+
+celebrity.emit('race win')
+celebrity.emit('race lost')
+celebrity.emit('race win')
