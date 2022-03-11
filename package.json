@@ -1,0 +1,19 @@
+{
+  "name": "1.the-backnode",
+  "version": "1.0.0",
+  "description": "\"learning the basics of backend web development\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeme254/back-node.git"
+  },
+  "author": "\"Otwoma Dennis\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codeme254/back-node/issues"
+  },
+  "homepage": "https://github.com/codeme254/back-node#readme"
+}
