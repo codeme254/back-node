@@ -26,6 +26,7 @@ const server = http.createServer((request, response) => {
         const friend = data.toString()
         console.log('Request is: ', friend)
         friends.push(JSON.parse(friend))
+        request.pipe(response)
     });
   } else if (request.method === "GET" && items[1] === "friends") {
     response.writeHead(200, {
@@ -60,3 +61,10 @@ const server = http.createServer((request, response) => {
 server.listen(PORT, () => {
   console.log(`Listening on port ${PORT}...`);
 });
+
+console.log(JSON.stringify({ name: "dennis otwoma", career: "dev"}));
+
+// the pipe functions reads data from a readable stream and write it to a destination writable stream
+
+
+

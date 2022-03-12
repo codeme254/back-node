@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/codeme254/back-node/issues"
   },
-  "homepage": "https://github.com/codeme254/back-node#readme"
+  "homepage": "https://github.com/codeme254/back-node#readme",
+  "dependencies": {
+    "csv-parse": "^5.0.4"
+  }
 }
