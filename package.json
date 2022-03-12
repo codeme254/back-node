@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/codeme254/back-node#readme",
   "dependencies": {
-    "csv-parse": "^5.0.4"
+    "csv-parse": "^5.0.4",
+    "express": "^4.17.3"
   }
 }
