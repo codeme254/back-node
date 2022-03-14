@@ -19,5 +19,8 @@
   "dependencies": {
     "csv-parse": "^5.0.4",
     "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "hbs": "^4.2.0"
   }
 }
