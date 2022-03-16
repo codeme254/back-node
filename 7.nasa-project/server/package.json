@@ -5,12 +5,14 @@
   "main": "src/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch":"nodemon/src/server.js",
+    "watch": "nodemon/src/server.js",
     "start": "node src/server.js"
   },
   "author": "dennis otwoma",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
+    "csv-parse": "^5.0.4",
     "express": "^4.17.3"
   }
 }
